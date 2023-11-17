@@ -1,0 +1,358 @@
+﻿Instalaciones necesarias
+
+
+Node
+ 
+Visual Studio code
+
+Google chrome
+ 
+
+
+Extensiones vs code
+
+	activitus bar
+
+	typescript importer
+
+ 
+
+Extensiones de chrome
+
+	json viewer
+ awesome
+
+
+
+
+
+HISTORIA DE JAVASCRIPT
+
+
+Java y JavaScript no es lo mismo.
+
+A inicios de los anos 90. Un lenguaje de programación del lado del cliente.
+Brendan Eich. 
+Junto con netscape fundan liveScript con fines mercadologicos 
+Fundan javascpript. 1997 ecma para estandarizar javascript
+ECMA-> European computer manufacturers association
+
+Ecma - 262 primer standar
+
+
+
+
+USO DE JAVASCRIPT EN LA INDUSTRIA ACTUAL
+
+Aplicaciónes web
+Crear presentacione s
+Crear webservers
+Video juegos 
+Aplicaciones móviles
+
+Reveal.js para presentaciones web
+Underrun javascript game
+
+
+
+
+
+HOLA MUNDO EN JAVASCRIPT
+
+Console.log('hola mundo');
+
+
+CREACION DE VARIABLES Y CONSTANTES
+
+let 
+var 
+const 
+
+polyfill 
+es un coddigo que provee el funcionamiento de una nueva caracteristica de javascpript(ES6) 
+en versiones viejas como ES5
+
+
+
+INTRODUCCION A LA CONSOLA DE JAVASCRIPT
+Console.log()
+
+DEPURACION Y BREAKPOINTS
+
+debug 
+
+PROBLEMAS CON LA DECLARACION DE VARIABLES CON VAR
+ no es recomendable el uso de var para declaracion de variables a menos de que sea un 
+ navegador viejo, es mejor el uso de let y const.
+
+PROMPTS, ALERTS, CONFIRM
+alert, prompt, confirm, vienen dentro del metodo window
+funciones(dentro de window)
+
+seccion 03 
+primitivos 
+	como se usan?
+	para que sirven?
+
+objetos 
+
+funciones
+
+funciones de flechas 
+
+arreglos
+
+****************
+
+tipo de datos de una variable:
+describe el contenido del valor que tienen la variable
+let canasta = 'manzana';
+
+
+que son los primitivos?
+
+es informacion que no es un objeto y son inmutables.
+
+boolean - true/false::verdadero/falso
+null - sin valor en lo absoluto 
+undefined - una variable declarada que aun no se le asigna valor.
+number - integers, floats, etc;
+string - una cadena de caracteres, ej: palabras, nombre de personas
+symbol - es un valor unico que no es igual a ningun otro valor
+
+palabras reservadas
+
+Son palabras que tienen un uso específico.
+
+Const
+If
+Try
+While
+for()
+Enum
+
+No se permite que la variable empiece con #
+Puede empezar con _
+Puede empezar con $
+Se puede completar con números c _ para separar las variables
+
+arreglos
+
+Son un objeto muy parecido a una lista de información, que contienen grupo de elementos.
+
+Usualmente, esa información dentro del arreglo es del mismo tipo de dato.
+
+
+objetos literales 
+funciones basicas
+funciones de flecha 
+
+Una funcion es un segmento de código y un método es una función que se encuentra dentro de un objeto.
+
+Una función anonima no tiene nombre, al asignarlo a una variable/constante, la función toma el nombre variable/constante.
+
+Las funciones reciben argumentos.
+
+Dependiendo de los argumentos definidos, las funciones no siempre se llaman
+Por eso se le pasa la función arguments para que cuando se llamen aparezcan todos los argumentos al momento de llamarla.
+
+Funciones de flechas o lambda functions
+
+
+retorno de las funciones 
+Cuando las funciones no retornan nada es undefined
+El código después del return no se ejecuta jamas
+
+El retorno en una función de flecha no es necesario cuando son dos valores de retorno, haciendo la operacion.
+
+ejercicios y ejemplos de cada tipo expuesto 
+al final codigo fuente de respaldo
+
+Sección 3 
+
+Todo objeto se pasa por referencia, y todo primitivo se pasa por valor
+= asignación 
+
+== debe ser igual al valor 
+
+=== no solo compara que sean iguales sino también el tapado 
+
+Apostol uno que es enviado, uno al que se le ha encomendado una misión
+
+
+Estructuras de control de flujo
+Paso de variables por valor y por referencia 
+Romper referencia de objetos 
+If y else 
+Un poco sobre logica booleana
+Operadores y operadores de asignación
+Operador condicional ternario
+
+
+Diferentes usos del operador condicional ternario 
+Switch 
+While 
+Do-while 
+For 
+	for in
+	for of 
+
+Código fuente en caso de ser necesario.
+
+
+SECCION 4 
+
+Underscore.js es una libreria de js que provee funciones de gran uso
+
+
+Trabajar con arreglos
+Mezclar los valores de los arreglos
+Introducción a la manipulación del DOM
+
+Doument object model
+Conjunto de objetos anidados para crear un documento un html 
+Acceso dinámico a sus elementos y poder manipularlos.
+
+Document. querySlectorAll()
+Document.querySelector()
+Document.body()
+Document.querySelector('small').innerText = '<b>hola mundo</b>
+Document.querySelector('small').innerHTML = '<b>Hola Mundo</b>
+Document.getElementById('computadora-carta');
+Document.querySelector('#computadora-carta');
+Document.querySelector('.carta');  //solo seria el primero
+Document.querySelectorAll('.carta');
+Hacerlo lo menos posible y de usarlo, utilizar variables
+
+Para crear un elemento que no este incluido en el div
+Const divBotones = document.querySelector('#divBotones');
+<div id='div-botones' class = "col text-center"><div
+Document.createElement('button');
+
+DivBotones.append(botonNuevo);
+botonNuevo.innerText ='destruir el mundo';
+botonNuevo.classList.add('btn');
+
+
+
+Eventos 
+Crear imágenes en la pagina
+Realizar la logica para implementar a un competidor de cartas.
+
+Sección 5
+
+Patron modulo 
+Minimizar el código de forma manual 
+Optimizaciones y protección de código 
+
+
+El patron modulo es el patron mas común que hay en javascript
+Es compatible con cualquier version de javascript desde el 2005
+Permite la encapsulacion y nos sirve para proteger al mismo
+
+Funciones anónimas autoinvocadas
+
+Use strict 
+Ser estricto a la hora de evaluar el código 
+
+
+
+seccion 6 
+
+protype : es el adn del objeto 
+
+clases
+propiedades privadas
+propiedades estaticas
+setters 
+getters
+
+temas de la seccion 
+problematica de prototipos
+clases
+sts
+gets
+metodos estaticos 
+gets estticos 
+esNext: proiedades privadas(aun no soportado completamente)
+singletons
+multiples constructores
+
+esta seccion es fundamental para la programacion moderna de javascript, nos servira mucho en el futuro y recuerden que al final de la seccion tiene el codigo fuente.
+
+
+clases basicas
+
+
+
+
+
+
+
+
+
+
+
+
+Municipio
+Eugenio Maria de hostos 
+
+Distrito municipal
+Eugenio maria de hostos 
+
+Sección
+La isleta
+
+Barrio/paraje
+Cerrejón
+
+
+Paso 4
+
+tampai se clasifico en fase 3 crisis de la cif para el periodo 2014, los principales factores que contribuyeron a a dicha situación es la prolongación de la sequía, bajo poder adquisitivo de un incremento de un 65% por parte de la población por el alto costo de los alimentos básicos y la baja disponibilidad.
+
+el 91% de la población  mas pobre depende del agua no mejorada, ademas el 72% toma más de dos horas para obtener el agua, el 62% defeca al aire libre.
+
+
+Paso 5 
+
+el 20% que es 8000 niños de 6-12 anos, reciben ayuda, no se cumple ningún criterio que corresponde a la ayuda humanitaria en los próximos tres meses.
+
+1000 hogares reciben ayuda que corresponde al 30% de sus necesidades, no corresponde a la ayuda humanitaria.
+
+
+
+
+
+
+SECCION 9 
+
+LABORATORIO 
+
+
+scopes 
+variables locales
+store gobal 
+modulos
+localstorage
+sesion storage
+despliegues 
+vite
+documentos de funciones
+
+SECCION 10
+
+informacion para una aplicacion moderna de javascript
+
+variables de entorno
+callbacks y callback hell
+promises y promise hell
+Async, async - await
+evitar los callback o promise hell
+funciones generadoras
+funciones generadoras asincronas
+
+
+callbacks
+
+
