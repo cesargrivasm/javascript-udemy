@@ -355,4 +355,6 @@ funciones generadoras asincronas
 
 callbacks
 
+una funcion que recibe un argumento  y ese argumento es una funcion que se invoca dentro de una funcion
+
 
