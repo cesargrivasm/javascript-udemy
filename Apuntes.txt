@@ -357,4 +357,9 @@ callbacks
 
 una funcion que recibe un argumento  y ese argumento es una funcion que se invoca dentro de una funcion
 
+promesas
+
+un acuerdo entre dos partes en la ul una de las partes se compromete en realizar algo 
+
+promesas hell
 
